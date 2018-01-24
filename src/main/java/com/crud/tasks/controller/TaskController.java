@@ -36,4 +36,9 @@ public class TaskController {
     public void createTask(TaskDto taskDto) {
 
     }
+
+    @RequestMapping(method = RequestMethod.POST, value = "newTask")
+    public TaskDto newTask(TaskDto taskDto) {
+        return new TaskDto((long)1, "Create New Task", "Test task content");
+    }
 }
