@@ -16,6 +16,9 @@ public class TrelloCardDto {
         this.listId = listId;
     }
 
+    public TrelloCardDto() {
+    }
+
     public String getName() {
         return name;
     }

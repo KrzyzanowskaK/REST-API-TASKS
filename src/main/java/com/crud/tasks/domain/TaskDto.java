@@ -1,8 +1,5 @@
 package com.crud.tasks.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-
 public class TaskDto {
     private Long id;
     private String title;
@@ -12,6 +9,9 @@ public class TaskDto {
         this.id = id;
         this.title = title;
         this.content = content;
+    }
+
+    public TaskDto() {
     }
 
     public Long getId() {
